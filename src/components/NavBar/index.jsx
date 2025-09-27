@@ -69,7 +69,7 @@ export default function NavBar({ setSearch, search }) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", sm: "flex" } }}
           >
-            The Challange SWAPI
+            Characters Star Wars
           </Typography>
           {isMobile ? (
             <IconButton
