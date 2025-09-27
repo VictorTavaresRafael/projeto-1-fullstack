@@ -36,8 +36,7 @@ O objetivo deste projeto é criar uma aplicação web que consome a API pública
 - `public/`: Contém o arquivo HTML principal e outros ativos públicos.
 - `src/`: Contém o código-fonte da aplicação React.
   - `components/`: Componentes reutilizáveis da aplicação.
-  - `pages/`: Páginas principais da aplicação.
-  - `services/`: Configurações e chamadas de API.
+  - `contexts/`: Configurações e chamadas de API.
   - `App.js`: Componente raiz da aplicação.
   - `index.js`: Ponto de entrada da aplicação.
 
