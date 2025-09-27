@@ -2,7 +2,7 @@
 # Projeto 1 - Desafio Full Stack
 Este é o repositório do Projeto 1 do curso de Desenvolvimento Full Stack
 
--Link do deploy: [https://projeto-1-fullstack.vercel.app/](https://projeto-1-fullstack.vercel.app/)
+- Link do deploy: [https://projeto-1-fullstack.vercel.app/](https://projeto-1-fullstack.vercel.app/)
 
 ## Descrição do Projeto
 O objetivo deste projeto é criar uma aplicação web que consome a API pública [SWAPI](https://swapi.dev/) para exibir informações sobre personagens de Star Wars.
