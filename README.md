@@ -13,13 +13,11 @@ O objetivo deste projeto é criar uma aplicação web que consome a API pública
 ## Tecnologias Utilizadas
 - React
 - Material-UI
-- Axios
 - SWAPI (Star Wars API)
 ## Como Executar o Projeto Localmente
 1. Clone este repositório:
    ```bash
    git clone
-    git clone
     ```
 2. Navegue até o diretório do projeto:
     ```bash
