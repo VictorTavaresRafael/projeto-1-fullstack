@@ -1,5 +1,5 @@
 
-# Projeto 1 - Desafio Full Stack
+# Projeto 2 - Desafio Full Stack
 Este é o repositório do Projeto 1 do curso de Desenvolvimento Full Stack
 
 - Link do deploy: [https://projeto-1-fullstack-lyart.vercel.app/](https://projeto-1-fullstack-lyart.vercel.app/)
@@ -10,6 +10,8 @@ O objetivo deste projeto é criar uma aplicação web que consome a API pública
 - Listar personagens de Star Wars com paginação.
 - Exibir detalhes de cada personagem ao clicar em seu nome.
 - Barra de navegação responsiva.
+- Página de Login
+- Criação de usuário
 ## Tecnologias Utilizadas
 - React
 - Material-UI
@@ -31,7 +33,23 @@ O objetivo deste projeto é criar uma aplicação web que consome a API pública
     ```bash
     npm start
     ```
-5. Abra seu navegador e acesse `http://localhost:3000` para ver a aplicação em ação.
+    1. Clone este repositório:
+   ```bash
+   git clone
+    ```
+5. Navegue até o diretório do projeto backend:
+    ```bash
+    cd projeto-1-fullstack/backend
+    ```
+6. Instale as dependências:
+    ```bash
+    npm install
+    ```
+7. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
+8. Abra seu navegador e acesse `http://localhost:3000` para ver a aplicação em ação.
 ## Estrutura do Projeto
 - `public/`: Contém o arquivo HTML principal e outros ativos públicos.
 - `src/`: Contém o código-fonte da aplicação React.
