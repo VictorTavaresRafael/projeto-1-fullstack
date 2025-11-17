@@ -16,6 +16,8 @@ import {
   CharactersProvider,
   useCharacters,
 } from "./contexts/CharactersContext";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
+import Login from "./components/Login/Login.jsx";
 
 function CharactersPage() {
   const {
@@ -30,10 +32,17 @@ function CharactersPage() {
     handlePageChange,
   } = useCharacters();
 
+  const { logout, user } = useAuth(); 
+
   return (
-    // multiplos characters
     <div>
-      <Navbar setSearch={setSearch} search={search} />
+      {/* Navbar com logout */}
+      <Navbar
+        setSearch={setSearch}
+        search={search}
+        onLogout={logout}
+        user={user} // ← Esta prop é importante
+      />
       <Container
         maxWidth="false"
         style={{
@@ -166,10 +175,45 @@ function CharactersPage() {
   );
 }
 
-export default function App() {
+// Componente que decide o que renderizar
+function AppContent() {
+  const { user, loading } = useAuth();
+
+  // Loading state
+  if (loading) {
+    return (
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        }}
+      >
+        <Skeleton variant="circular" width={40} height={40} />
+      </Box>
+    );
+  }
+
+  // Se não está autenticado, mostra login
+  if (!user) {
+    return <Login />;
+  }
+
+  // Se está autenticado, mostra a aplicação normal
   return (
     <CharactersProvider>
       <CharactersPage />
     </CharactersProvider>
+  );
+}
+
+// App principal com todos os providers
+export default function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
   );
 }
