@@ -1,6 +1,6 @@
 
 # Projeto 2 - Desafio Full Stack
-Este é o repositório do Projeto 1 do curso de Desenvolvimento Full Stack
+Este é o repositório do Projeto 2 do curso de Desenvolvimento Full Stack
 
 - Link do deploy: [https://projeto-1-fullstack-lyart.vercel.app/](https://projeto-1-fullstack-lyart.vercel.app/)
 
