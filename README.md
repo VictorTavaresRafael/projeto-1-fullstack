@@ -1,4 +1,4 @@
-// colocar o link do deploy do projeto
+
 # Projeto 1 - Desafio Full Stack
 Este é o repositório do Projeto 1 do curso de Desenvolvimento Full Stack
 
